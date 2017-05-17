@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>0</h2>
+
+<button>Increment</button>
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+    $("button").on("click", function () {
+        $.post('@Url.Content("~/")home/increment', null, function (response) {
+            $("h2").html(response.Counter);
+        })
+    });
+</script>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MeroDBModelStoreContainer" CdmEntityContainer="MeroDBEntities">
+    <EntitySetMapping Name="Counters">
+      <EntityTypeMapping TypeName="MeroDBModel.Counter">
+        <MappingFragment StoreEntitySet="Counter">
+          <ScalarProperty Name="count" ColumnName="count" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
